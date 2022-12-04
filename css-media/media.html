@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    hr {
+      width: 95%;
+      margin: 1rem;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      font-family: "微軟正黑體";
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .col:first-child {
+      text-align: center;
+    }
+
+    .col img {
+      width: 50%;
+    }
+
+    .col h1,
+    .col p {
+      text-align: left;
+    }
+
+    .solid1 {
+      width: 25%;
+      height: 0.5px;
+      background: #999;
+      position: relative;
+      top: 38%;
+      left: 15%;
+      transform: rotate(15deg);
+    }
+
+    .solid2 {
+      content: "";
+      width: 15%;
+      height: 0.5px;
+      background: #999;
+      top: 58%;
+      left: 58%;
+      position: absolute;
+      transform: rotate(27deg);
+    }
+
+    .solid3 {
+      width: 15%;
+      height: 0.5px;
+      background: #999;
+      left: 55%;
+      top: 23%;
+      position: absolute;
+      transform: rotate(150deg);
+    }
+
+    .solid4 {
+      content: "";
+      width: 10%;
+      height: 0.5px;
+      background: #999;
+      left: 33%;
+      top: 26%;
+      position: absolute;
+      transform: rotate(33deg);
+    }
+
+    .solid5 {
+      content: "";
+      width: 20%;
+      height: 0.5px;
+      background: #999;
+      top: 43%;
+      left: 60%;
+      position: absolute;
+      transform: rotate(355deg);
+    }
+
+    .solid6 {
+      content: "";
+      width: 10%;
+      height: 0.5px;
+      background: #999;
+      top: 60%;
+      left: 32%;
+      position: absolute;
+      transform: rotate(320deg);
+    }
+
+    .solid7 {
+      content: "";
+      width: 18%;
+      height: 0.5px;
+      background: #999;
+      top: 54%;
+      left: 21%;
+      position: absolute;
+      transform: rotate(350deg);
+    }
+
+    .solid1,
+    .solid2,
+    .solid3,
+    .solid4,
+    .solid5,
+    .solid6,
+    .solid7 {
+      display: none;
+    }
+
+
+    @media(min-width: 550px) {
+      body {
+        overflow: hidden;
+      }
+
+      .col h1 {
+        text-align: center;
+      }
+
+      .col img {
+        width: 35%;
+      }
+
+      hr,
+      p {
+        display: none;
+      }
+
+      .solid1,
+      .solid2,
+      .solid3,
+      .solid4,
+      .solid5,
+      .solid6,
+      .solid7 {
+        display: block;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      .col {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+
+      .logo {
+        top: 50%;
+        left: 50%;
+        width: 30%;
+      }
+
+      .html {
+        left: 10%;
+        top: 25%;
+      }
+
+      .css {
+        left: 30%;
+        top: 15%;
+      }
+
+      .bs {
+        left: 75%;
+        top: 15%;
+      }
+
+      .jq {
+        left: 30%;
+        top: 80%;
+      }
+
+      .vue {
+        left: 80%;
+        top: 75%;
+        width: 30%;
+      }
+
+      .js {
+        left: 15%;
+        top: 60%;
+      }
+
+      .sass {
+        left: 90%;
+        top: 40%;
+        width: 25%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col logo">
+        <img src="./hero.png" alt="">
+        <h2>泰山職訓局</h2>
+        <h2>從零開始的網頁設計課程</h2>
+        <h4>轉職網頁開發人員　掌握就業必備職能<br>
+          由淺入深學習技術　強化職場的競爭力</h4>
+      </div>
+      <hr>
+      <div class="col html">
+        <img src="./html.png" alt="">
+        <h1>HTML</h1>
+        <p>
+          超文本標記語言是一種用於建立網頁的標準標記語言。HTML是一種基礎技術，常與CSS、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面。網頁瀏覽器可以讀取HTML檔案，並將其彩現成視覺化網頁。HTML描述了一個網站的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+        </p>
+      </div>
+      <hr>
+      <div class="col css">
+        <img src="./css.png" alt="">
+        <h1>CSS</h1>
+        <p>
+          階層式樣式表是一種用來為結構化文件添加樣式的電腦語言，由W3C定義和維護。CSS3現在已被大部分現代瀏覽器支援，而下一版的CSS4仍在開發中。
+          CSS不僅可以靜態地修飾網頁，還可以配合各種手稿語言動態地對網頁各元素進行格式化。
+        </p>
+      </div>
+      <hr>
+      <div class="col js">
+        <img src="./js.png" alt="">
+        <h1>JavaScript</h1>
+        <p>
+          JavaScript是一門基於原型和頭等函式的多範式進階直譯程式語言，它支援物件導向程式設計、指令式編程和函式語言程式設計。它提供方法來操控文字、陣列、日期以及正規表示式等。不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。它由ECMA透過ECMAScript實作語言的標準化。
+        </p>
+      </div>
+      <hr>
+      <div class="col jq">
+        <img src="./jq.png" alt="">
+        <h1>JQuery</h1>
+        <p>
+          jQuery是一套跨瀏覽器的JavaScript函式庫，用於簡化HTML與JavaScript之間的操作。約翰·雷西格在2006年1月的BarCamp NYC上釋出了第一個版本。目前由Dave
+          Methvin領導的團隊進行開發。
+        </p>
+      </div>
+      <hr>
+      <div class="col bs">
+        <img src="./bs.png" alt="">
+        <h1>Bootstrap</h1>
+        <p>
+          Bootstrap是一組用於網站和網路應用程式開發的開源前端框架，包括HTML、CSS及JavaScript的框架，提供字體排印、表單、按鈕、導航及其他各種元件及Javascript擴充套件，旨在使動態網頁和Web應用的開發更加容易。
+        </p>
+      </div>
+      <hr>
+      <div class="col vue">
+        <img src="./vue.png" alt="">
+        <h1>Vue</h1>
+        <p>
+          Vue.js是一個用於建立使用者介面的開源MVVM前端JavaScript框架，也是一個建立單頁應用的Web應用框架。Vue.js由尤雨溪建立，由他和其他活躍的核心團隊成員維護。
+          2016年一項針對JavaScript框架的調查表明，Vue有著89%的開發者滿意度。
+        </p>
+      </div>
+      <hr>
+      <div class="col sass">
+        <img src="./Sass.png" alt="">
+        <h1>Sass</h1>
+        <p>
+          Sass是一個最初由Hampton Catlin設計並由Natalie Weizenbaum開發的層疊樣式表語言。在開發最初版本之後，Weizenbaum和Chris
+          Eppstein繼續通過SassScript來繼續擴充Sass的功能。SassScript是一個在Sass檔案中使用的小型手稿語言。
+        </p>
+      </div>
+      <hr>
+    </div>
+    <div class="solid1"></div>
+    <div class="solid2"></div>
+    <div class="solid3"></div>
+    <div class="solid4"></div>
+    <div class="solid5"></div>
+    <div class="solid6"></div>
+    <div class="solid7"></div>
+  </div>
+</body>
+
+</html>
